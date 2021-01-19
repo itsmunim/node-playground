@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "egg"
+    },
+    {
+      "id": 2,
+      "name": "cake"
+    }
+  ]
+}
