@@ -1,0 +1,36 @@
+{
+  "serviceRef": "fulfilment-service",
+  "templateName": "invoice",
+  "senderEmail": "", // optional, default: no-reply@notifications.google.com
+  "recipient": {
+    "name": "",
+    "email": ""
+  },
+  "data": {
+  }
+}
+
+// db schema for notification
+{
+  "notificationId": "",
+  "status": "fail",
+  "payload": {
+    "serviceRef": "fulfilment-service",
+    "templateName": "invoice",
+    "senderEmail": "", // optional, default: no-reply@notifications.google.com
+    "recipient": {
+      "name": "",
+      "email": ""
+    },
+    "data": {
+    }
+  }
+}
+
+
+// db schema for templates
+{ 
+  "serviceRef": "",
+  "templateName": "",
+  "content": "<h1>hello {{person.name}}</h1>"
+}

@@ -1,0 +1,35 @@
+{
+  "customer": {
+    "firstName": "",
+    "lastName": "",
+    "phoneNumber": "",
+    "shippingAddress": {
+      "address": "",
+      "phoneNumber": "",
+      "name": ""
+    }
+  },
+  "items": [
+    {
+      "name": "",
+      "quantity": "",
+      "vendor": {
+        "name": "",
+        "id": ""
+      },
+      "unitPrice": "",
+      "details": {}
+    }
+  ],
+  "extra": {
+    "discount": "",
+    "vat": "",
+    "shippingInfo": {
+      "shippingMethod": {
+        "shippingVendorId": "",
+        "shippingVendorName": ""
+      },
+      "shippingFee": ""
+    }
+  }
+}
