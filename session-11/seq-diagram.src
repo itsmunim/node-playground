@@ -1,0 +1,50 @@
+participant ecomm
+participant os
+participant ps
+participant fs
+participant ns
+participant pubsub
+
+note over ecomm, pubsub: normal flow
+
+ecomm->os: POST /orders
+
+os->ecomm: /checkout
+
+ecomm->ecomm: redirect to checkout
+
+os->ps: /payments
+
+ps->os: [payment url]
+
+os->os: redirct to payment url
+
+ps->os: [payment status]
+
+os->pubsub: [order status]
+
+pubsub->fs: /fulfilment
+
+pubsub->ns: /notifications
+
+fs->os: [shipment status]
+
+os->pubsub: [order status]
+
+pubsub->ns: /notifications
+
+note over ecomm, pubsub: cancellation flow
+
+ecomm->os: /cancel
+
+os->pubsub: [cancel]
+
+pubsub->fs: /cancel
+
+fs->ps: [cancellation status]
+
+ps->os: [refund status]
+
+os->pubsub: [order status]
+
+pubsub->ns: /notifications
