@@ -24,7 +24,7 @@ const oderPayload = {
       id: '', // the id from inventory service
       name: '',
       quantity: '',
-      provider: {
+      store: {
         name: '',
         id: '',
       },
