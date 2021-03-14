@@ -1,0 +1,14 @@
+{
+  "name": "file-organizer",
+  "version": "1.0.1",
+  "description": "A basic pattern based file orginizer",
+  "main": "index.js",
+  "bin": {
+    "bfo": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
